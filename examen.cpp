@@ -5,7 +5,7 @@ int main ()
 
 	int i=1;
 	float RNO,RCE,RSU,ARNO=0,ARCE=0,ARSU=0,MERSU=50000,MES,PRORCE;
-	for (i=1;i<=12;i++)
+	for (i=1;i<=3;i++)
 {
 	printf("Dame los valores de RNO\n");
 	scanf ("%f",&RNO);
@@ -20,10 +20,6 @@ int main ()
 	{
 	MERSU=RSU;
 	MES=i;
-	}
-	else 
-	{
-	i=i+1;
 	}
 
 }

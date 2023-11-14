@@ -3,9 +3,6 @@ int main ()
 	int  w,i,P1,P2,P3,P4,P5, AP1=0,AP2=0,AP3=0,AP4=0,AP5=0,RECAU=0, PRE=0;
 	int CLAVE,CANT;
 
-    while (CLAVE != -1  &&  CANT != -1)
-    {
-
         printf("Dame el valor Para P1\n");
         scanf("%d",&P1);
         printf("Dame el valor Para P2\n");
@@ -16,6 +13,11 @@ int main ()
         scanf("%d",&P4);
         printf("Dame el valor Para P5\n");
         scanf("%d",&P5);
+
+    while (CLAVE != -1  &&  CANT != -1)
+    {
+
+
         printf("Dame el valor de CLAVE\n");
         scanf("%d",&CLAVE);
         printf("Dame el valor de CANT\n");
