@@ -3,16 +3,16 @@
 El programa escribe caracteres en un archivo. */
 int main()
 {
-    char p1;
+    char p1[10];
     FILE *ar;
-    ar=fopen("arc.txt", "r"); /* Se abre el archivo arc.txt para escritura. */
+    ar=fopen("arc.txt", "w"); /* Se abre el archivo arc.txt para escritura. */
         if (ar!= NULL)
         {
-            while ((p1=getchar()) != '\n')
+            while (p1!= "\n")
             {
             /* Se escriben caracteres en el archivo mientras no se detecte el caracter
 ➥que indica el fin de la línea. */
-            fputc(p1, ar);
+            fgets(p1,10,ar);
             fclose(ar); /* Se cierra el archivo. */
             }
         }
