@@ -5,7 +5,7 @@ int main()
 {
     char p1;
     FILE *ar;
-    ar=fopen("arc.txt", "w"); /* Se abre el archivo arc.txt para escritura. */
+    ar=fopen("arc.txt", "r"); /* Se abre el archivo arc.txt para escritura. */
         if (ar!= NULL)
         {
             while ((p1=getchar()) != '\n')
